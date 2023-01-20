@@ -115,12 +115,12 @@ preinfo() {
 	echo "———————————————————SuperSpeed 全面测速版——————————————————"
 	echo "       bash <(curl -Lso- https://raw.githubusercontent.com/bilibilimrlei/SpeedTestCN/main/superspeed.sh)"
 	echo "       如果仍然异常，应该是SpeedTest初次授权问题"
-	echo "       请使用工具箱安装SpeedTest然后手动运行后YES授权"
+	echo "       请自行前往SpeedTest官网下载安装SpeedTest然后后手动运行后YES授权"
 	echo "——————————————————————————————————————————————————————————"
 }
 
 selecttest() {
-	echo -e "  测速类型:    ${GREEN}1.${PLAIN} 三网测速    ${GREEN}2.${PLAIN} 取消测速"
+	echo -e "  测速类型:    ${GREEN}1.${PLAIN} 国内测速    ${GREEN}2.${PLAIN} 取消测速"
 	echo -ne "               ${GREEN}3.${PLAIN} 电信节点    ${GREEN}4.${PLAIN} 联通节点    ${GREEN}5.${PLAIN} 移动节点"
 	while :; do echo
 			read -p "  请输入数字选择测速类型: " selection
@@ -140,18 +140,18 @@ runtest() {
 		echo "ID    测速服务器信息       上传/Mbps   下载/Mbps   延迟/ms"
 		start=$(date +%s) 
 
-		 speed_test '17145' '合肥5G' '电信'
+		 speed_test '17145' '合肥５Ｇ' '电信'
 		 speed_test '23844' '武汉' '电信'
-		 speed_test '23844' '武汉5G' '电信'
-		 speed_test '26352' '南京5G' '电信'
-		 speed_test '34115' '天津5G' '电信'
+		 speed_test '23844' '武汉５Ｇ' '电信'
+		 speed_test '26352' '南京５Ｇ' '电信'
+		 speed_test '34115' '天津５Ｇ' '电信'
 		 speed_test '35722' '天津' '电信'
-		 speed_test '36663' '镇江5G' '电信'
-		 speed_test '5396' '苏州5G' '电信'
+		 speed_test '36663' '镇江５Ｇ' '电信'
+		 speed_test '5396' '苏州５Ｇ' '电信'
 		 speed_test '3633' '上海' '电信'
 		 speed_test '3979' '兰州' '电信'
 		 speed_test '35722' '天津' '电信'
-		 speed_test '5317' '扬州5G' '电信'
+		 speed_test '5317' '扬州５Ｇ' '电信'
 		 speed_test '28225' '长沙' '电信'
 		 speed_test '27594' '广州' '电信'
 		# speed_test '29353' '湖北武汉５Ｇ' '电信'
@@ -159,9 +159,9 @@ runtest() {
 		# speed_test '3973' '甘肃兰州' '电信'
 		# speed_test '19076' '重庆' '电信'
 		#***
-		 speed_test '26646' '郑州5G' '联通'
+		 speed_test '26646' '郑州５Ｇ' '联通'
 		 speed_test '45170' '无锡' '联通'
-		 speed_test '24447' '上海5G' '联通'
+		 speed_test '24447' '上海５Ｇ' '联通'
 		 speed_test '54625' '南昌' '联通'
 		 speed_test '4870' '长沙' '联通'
 		 speed_test '37235' '沈阳' '联通'
@@ -183,14 +183,14 @@ runtest() {
 		# speed_test '31985' '重庆' '联通'
 		# speed_test '4863' '陕西西安' '联通'
 		#***
-		 speed_test '41910' '郑州5G-1' '移动'
-		 speed_test '44176' '郑州5G-2' '移动'
+		 speed_test '41910' '郑州５Ｇ-Ⅰ' '移动'
+		 speed_test '44176' '郑州５Ｇ-Ⅱ' '移动'
 		 speed_test '25858' '北京' '移动'
-		 speed_test '54312' '杭州5G' '移动'
+		 speed_test '54312' '杭州５Ｇ' '移动'
 		 speed_test '16145' '兰州' '移动'
 		 speed_test '4575' '成都' '移动'
-		 speed_test '44176' '郑州5G' '移动'
-		 speed_test '29105' '西安5G' '移动'
+		 speed_test '44176' '郑州５Ｇ' '移动'
+		 speed_test '29105' '西安５Ｇ' '移动'
 		 speed_test '32155' '新界葵涌' '移动'
 		 speed_test '37639' '香港' '移动'
 		# speed_test '26940' '宁夏银川' '移动'
@@ -259,18 +259,18 @@ runtest() {
 		echo "ID    测速服务器信息       上传/Mbps   下载/Mbps   延迟/ms"
 		start=$(date +%s) 
 
-		 speed_test '17145' '合肥5G' '电信'
+		 peed_test '17145' '合肥５Ｇ' '电信'
 		 speed_test '23844' '武汉' '电信'
-		 speed_test '23844' '武汉5G' '电信'
-		 speed_test '26352' '南京5G' '电信'
-		 speed_test '34115' '天津5G' '电信'
+		 speed_test '23844' '武汉５Ｇ' '电信'
+		 speed_test '26352' '南京５Ｇ' '电信'
+		 speed_test '34115' '天津５Ｇ' '电信'
 		 speed_test '35722' '天津' '电信'
-		 speed_test '36663' '镇江5G' '电信'
-		 speed_test '5396' '苏州5G' '电信'
+		 speed_test '36663' '镇江５Ｇ' '电信'
+		 speed_test '5396' '苏州５Ｇ' '电信'
 		 speed_test '3633' '上海' '电信'
 		 speed_test '3979' '兰州' '电信'
 		 speed_test '35722' '天津' '电信'
-		 speed_test '5317' '扬州5G' '电信'
+		 speed_test '5317' '扬州５Ｇ' '电信'
 		 speed_test '28225' '长沙' '电信'
 		 speed_test '27594' '广州' '电信'
 
@@ -294,9 +294,9 @@ runtest() {
 		echo "ID    测速服务器信息       上传/Mbps   下载/Mbps   延迟/ms"
 		start=$(date +%s) 
 
-		 speed_test '26646' '郑州5G' '联通'
+		 speed_test '26646' '郑州５Ｇ' '联通'
 		 speed_test '45170' '无锡' '联通'
-		 speed_test '24447' '上海5G' '联通'
+		 speed_test '24447' '上海５Ｇ' '联通'
 		 speed_test '54625' '南昌' '联通'
 		 speed_test '4870' '长沙' '联通'
 		 speed_test '37235' '沈阳' '联通'
@@ -321,14 +321,14 @@ runtest() {
 		echo "ID    测速服务器信息       上传/Mbps   下载/Mbps   延迟/ms"
 		start=$(date +%s) 
 
-		 speed_test '41910' '郑州5G-1' '移动'
-		 speed_test '44176' '郑州5G-2' '移动'
+		 speed_test '41910' '郑州５Ｇ-Ⅰ' '移动'
+		 speed_test '44176' '郑州５Ｇ-Ⅱ' '移动'
 		 speed_test '25858' '北京' '移动'
-		 speed_test '54312' '杭州5G' '移动'
+		 speed_test '54312' '杭州５Ｇ' '移动'
 		 speed_test '16145' '兰州' '移动'
 		 speed_test '4575' '成都' '移动'
-		 speed_test '44176' '郑州5G' '移动'
-		 speed_test '29105' '西安5G' '移动'
+		 speed_test '44176' '郑州５Ｇ' '移动'
+		 speed_test '29105' '西安５Ｇ' '移动'
 		 speed_test '32155' '新界葵涌' '移动'
 		 speed_test '37639' '香港' '移动'
 
