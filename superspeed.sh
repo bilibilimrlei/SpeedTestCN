@@ -183,8 +183,8 @@ runtest() {
 		# speed_test '31985' '重庆' '联通'
 		# speed_test '4863' '陕西西安' '联通'
 		#***
-		 speed_test '41910' '郑州５Ｇ-Ⅰ' '移动'
-		 speed_test '44176' '郑州５Ｇ-Ⅱ' '移动'
+		 speed_test '41910' '郑州５Ｇ-一号' '移动'
+		 speed_test '44176' '郑州５Ｇ-二号' '移动'
 		 speed_test '25858' '北京' '移动'
 		 speed_test '54312' '杭州５Ｇ' '移动'
 		 speed_test '16145' '兰州' '移动'
@@ -321,8 +321,8 @@ runtest() {
 		echo "ID    测速服务器信息       上传/Mbps   下载/Mbps   延迟/ms"
 		start=$(date +%s) 
 
-		 speed_test '41910' '郑州５Ｇ-Ⅰ' '移动'
-		 speed_test '44176' '郑州５Ｇ-Ⅱ' '移动'
+		 speed_test '41910' '郑州５Ｇ-1号' '移动'
+		 speed_test '44176' '郑州５Ｇ-2号' '移动'
 		 speed_test '25858' '北京' '移动'
 		 speed_test '54312' '杭州５Ｇ' '移动'
 		 speed_test '16145' '兰州' '移动'
