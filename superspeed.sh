@@ -236,6 +236,7 @@ runtest() {
 		 speed_test '5530' '重庆CCN' '其他'
 		 speed_test '35527' '成都广电' '其他'
 		 speed_test '55747' '深圳多线BGP' '其他'
+		 speed_test '55821' '上海盛世御安信息安全服务' '其他'
 
 		end=$(date +%s)  
 		##rm -rf speedtest*
