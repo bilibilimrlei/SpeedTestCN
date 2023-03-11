@@ -121,7 +121,7 @@ preinfo() {
 
 selecttest() {
 	echo -e "  测速类型:    ${GREEN}1.${PLAIN} 国内测速    ${GREEN}2.${PLAIN} 取消测速"
-	echo -ne "               ${GREEN}3.${PLAIN} 电信节点    ${GREEN}4.${PLAIN} 联通节点    ${GREEN}5.${PLAIN} 移动节点"
+	echo -ne "               ${GREEN}3.${PLAIN} 电信节点    ${GREEN}4.${PLAIN} 联通节点    ${GREEN}5.${PLAIN} 移动节点"    ${GREEN}6.${PLAIN} 其他节点"
 	while :; do echo
 			read -p "  请输入数字选择测速类型: " selection
 			if [[ ! $selection =~ ^[1-5]$ ]]; then
@@ -140,16 +140,16 @@ runtest() {
 		echo "ID    测速服务器信息       上传/Mbps   下载/Mbps   延迟/ms"
 		start=$(date +%s) 
 
-		 speed_test '17145' '合肥５Ｇ' '电信'
-		 speed_test '23844' '武汉' '电信'
-		 speed_test '23844' '武汉５Ｇ' '电信'
+		 speed_test '29071' '成都' '电信'
+		#speed_test '23844' '武汉' '电信'
+		#speed_test '23844' '武汉５Ｇ' '电信'
 		 speed_test '26352' '南京５Ｇ' '电信'
 		 speed_test '34115' '天津５Ｇ' '电信'
 		 speed_test '35722' '天津' '电信'
 		 speed_test '36663' '镇江５Ｇ' '电信'
 		 speed_test '5396' '苏州５Ｇ' '电信'
 		 speed_test '3633' '上海' '电信'
-		 speed_test '3979' '兰州' '电信'
+		 speed_test '3973' '兰州' '电信'
 		 speed_test '35722' '天津' '电信'
 		 speed_test '5317' '扬州５Ｇ' '电信'
 		 speed_test '28225' '长沙' '电信'
@@ -159,14 +159,13 @@ runtest() {
 		# speed_test '3973' '甘肃兰州' '电信'
 		# speed_test '19076' '重庆' '电信'
 		#***
-		 speed_test '26646' '郑州５Ｇ' '联通'
+		 speed_test '36646' '郑州５Ｇ' '联通'
 		 speed_test '45170' '无锡' '联通'
 		 speed_test '24447' '上海５Ｇ' '联通'
 		 speed_test '54625' '南昌' '联通'
 		 speed_test '4870' '长沙' '联通'
 		 speed_test '37235' '沈阳' '联通'
-		# speed_test '2461' '四川成都' '联通'
-		# speed_test '27154' '天津５Ｇ' '联通'
+		 speed_test '56354' '福建福州' '联通'
 		# speed_test '5509' '宁夏银川' '联通'
 		# speed_test '5724' '安徽合肥' '联通'
 		# speed_test '5039' '山东济南' '联通'
@@ -183,13 +182,13 @@ runtest() {
 		# speed_test '31985' '重庆' '联通'
 		# speed_test '4863' '陕西西安' '联通'
 		#***
-		 speed_test '41910' '郑州一号５Ｇ' '移动'
-		 speed_test '44176' '郑州二号５Ｇ' '移动'
-		 speed_test '25858' '北京' '移动'
+		#speed_test '41910' '郑州一号５Ｇ' '移动'
+		#speed_test '44176' '郑州二号５Ｇ' '移动'
+		#speed_test '25858' '北京' '移动'
 		 speed_test '54312' '杭州５Ｇ' '移动'
 		 speed_test '16145' '兰州' '移动'
 		 speed_test '4575' '成都' '移动'
-		 speed_test '44176' '郑州５Ｇ' '移动'
+		#speed_test '44176' '郑州５Ｇ' '移动'
 		 speed_test '29105' '西安５Ｇ' '移动'
 		 speed_test '32155' '新界葵涌' '移动'
 		 speed_test '37639' '香港' '移动'
@@ -260,16 +259,14 @@ runtest() {
 		echo "ID    测速服务器信息       上传/Mbps   下载/Mbps   延迟/ms"
 		start=$(date +%s) 
 
-		 peed_test '17145' '合肥５Ｇ' '电信'
-		 speed_test '23844' '武汉' '电信'
-		 speed_test '23844' '武汉５Ｇ' '电信'
+		 speed_test '29071' '成都' '电信'
 		 speed_test '26352' '南京５Ｇ' '电信'
 		 speed_test '34115' '天津５Ｇ' '电信'
 		 speed_test '35722' '天津' '电信'
 		 speed_test '36663' '镇江５Ｇ' '电信'
 		 speed_test '5396' '苏州５Ｇ' '电信'
 		 speed_test '3633' '上海' '电信'
-		 speed_test '3979' '兰州' '电信'
+		 speed_test '3973' '兰州' '电信'
 		 speed_test '35722' '天津' '电信'
 		 speed_test '5317' '扬州５Ｇ' '电信'
 		 speed_test '28225' '长沙' '电信'
@@ -295,12 +292,13 @@ runtest() {
 		echo "ID    测速服务器信息       上传/Mbps   下载/Mbps   延迟/ms"
 		start=$(date +%s) 
 
-		 speed_test '26646' '郑州５Ｇ' '联通'
+		 speed_test '36646' '郑州５Ｇ' '联通'
 		 speed_test '45170' '无锡' '联通'
 		 speed_test '24447' '上海５Ｇ' '联通'
 		 speed_test '54625' '南昌' '联通'
 		 speed_test '4870' '长沙' '联通'
 		 speed_test '37235' '沈阳' '联通'
+		 speed_test '56354' '福建福州' '联通'
 
 		end=$(date +%s)  
 		###rm -rf speedtest*
@@ -322,16 +320,38 @@ runtest() {
 		echo "ID    测速服务器信息       上传/Mbps   下载/Mbps   延迟/ms"
 		start=$(date +%s) 
 
-		 speed_test '41910' '郑州一号５Ｇ' '移动'
-		 speed_test '44176' '郑州二号５Ｇ' '移动'
-		 speed_test '25858' '北京' '移动'
 		 speed_test '54312' '杭州５Ｇ' '移动'
 		 speed_test '16145' '兰州' '移动'
 		 speed_test '4575' '成都' '移动'
-		 speed_test '44176' '郑州５Ｇ' '移动'
 		 speed_test '29105' '西安５Ｇ' '移动'
 		 speed_test '32155' '新界葵涌' '移动'
 		 speed_test '37639' '香港' '移动'
+
+		end=$(date +%s)  
+		####rm -rf speedtest*
+		echo "——————————————————————————————————————————————————————————"
+		time=$(( $end - $start ))
+		if [[ $time -gt 60 ]]; then
+			min=$(expr $time / 60)
+			sec=$(expr $time % 60)
+			echo -ne "  测试完成, 本次测速耗时: ${min} 分 ${sec} 秒"
+		else
+			echo -ne "  测试完成, 本次测速耗时: ${time} 秒"
+		fi
+		echo -ne "\n  当前时间: "
+		echo $(date +%Y-%m-%d" "%H:%M:%S)
+	fi
+	
+	if [[ ${selection} == 6 ]]; then
+		echo "——————————————————————————————————————————————————————————"
+		echo "ID    测速服务器信息       上传/Mbps   下载/Mbps   延迟/ms"
+		start=$(date +%s) 
+
+		 speed_test '30852' '昆山杜克大学校园网' '其他'
+		 speed_test '5530' '重庆CCN' '其他'
+		 speed_test '35527' '成都广电' '其他'
+		 speed_test '55747' '深圳多线BGP' '其他'
+		 speed_test '55821' '上海盛世御安信息安全服务' '其他'
 
 		end=$(date +%s)  
 		####rm -rf speedtest*
