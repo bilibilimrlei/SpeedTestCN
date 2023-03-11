@@ -122,7 +122,7 @@ preinfo() {
 selecttest() {
 	echo -e "  测速类型:    ${GREEN}1.${PLAIN} 国内测速    ${GREEN}2.${PLAIN} 取消测速"
 	echo -e "               ${GREEN}3.${PLAIN} 电信节点    ${GREEN}4.${PLAIN} 联通节点    ${GREEN}5.${PLAIN} 移动节点"
-	echo -ne "	      ${GREEN}6.${PLAIN} 其他节点"
+	echo -ne "               ${GREEN}6.${PLAIN} 其他节点"
 	while :; do echo
 			read -p "  请输入数字选择测速类型: " selection
 			if [[ ! $selection =~ ^[1-6]$ ]]; then
