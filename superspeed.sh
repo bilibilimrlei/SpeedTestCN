@@ -125,7 +125,7 @@ selecttest() {
 	echo -ne "		${GREEN}6.${PLAIN} 其他节点"
 	while :; do echo
 			read -p "  请输入数字选择测速类型: " selection
-			if [[ ! $selection =~ ^[1-5]$ ]]; then
+			if [[ ! $selection =~ ^[1-6]$ ]]; then
 					echo -ne "  ${RED}输入错误${PLAIN}, 请输入正确的数字!"
 			else
 					break   
